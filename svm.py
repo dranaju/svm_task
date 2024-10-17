@@ -50,7 +50,8 @@ ax2.set_title('Test set')
 
 plt.tight_layout()
 plt.savefig('feauture_space.png')
-plt.show()
+#plt.show()
+plt.clf()
 
 
 # Create a SVM Classifier
@@ -107,7 +108,8 @@ ax.scatter(
 plt.xlabel('Age')
 plt.ylabel('MaxHR')
 plt.savefig('linear_kernel.png')
-plt.show()
+#plt.show()
+plt.clf()
 
 scatter = plt.scatter(X_train[:, 0], X_train[:, 1], c=Y_train, s=30, cmap=plt.cm.Paired)
 handles, labels = scatter.legend_elements(num=1, prop="colors")
@@ -138,7 +140,8 @@ ax.scatter(
 plt.xlabel('Age')
 plt.ylabel('MaxHR')
 plt.savefig('polynomial_kernel.png')
-plt.show()
+#plt.show()
+plt.clf()
 
 scatter = plt.scatter(X_train[:, 0], X_train[:, 1], c=Y_train, s=30, cmap=plt.cm.Paired)
 handles, labels = scatter.legend_elements(num=1, prop="colors")
@@ -169,7 +172,8 @@ ax.scatter(
 plt.xlabel('Age')
 plt.ylabel('MaxHR')
 plt.savefig('radial_kernel.png')
-plt.show()
+#plt.show()
+plt.clf()
 
 # Title for the plots
 titles = ['SVC with linear kernel',
@@ -212,7 +216,8 @@ for clf, title, ax in zip(clf_list, titles, sub.flatten()):
     ax.set_title(title)
 
 plt.savefig('training_decision_boundary.png')
-plt.show()
+#plt.show()
+plt.clf()
 
 # Plot the decision boundary for test set
 fig, sub = plt.subplots(1, 3, figsize=(10, 5))
@@ -247,7 +252,8 @@ for clf, title, ax in zip(clf_list, titles, sub.flatten()):
     ax.set_title(title)
 
 plt.savefig('test_decision_boundary.png')
-plt.show()
+#plt.show()
+plt.clf()
 
 #end of svm.py
 
