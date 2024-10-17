@@ -1,0 +1,3 @@
+Accuracy of linear kernel: 58.89%
+Accuracy of polynomial kernel: 65.56%
+Accuracy of radial kernel: 57.78%
